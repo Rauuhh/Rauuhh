@@ -56,9 +56,10 @@ public class AppZonaClientes {
             }
             if (tres == 3){
                 System.out.println("ERROR DE AUTENTIFICACION");
+                System.exit(33);
 
             }else{
-            System.out.println("Algo no coincide o no existe! Vuelve a intentarlo... ERROR DE AUTENTICACIÓN");
+            System.out.println("Algo no coincide o no existe! Vuelve a intentarlo... ");
                 tres++;
             }
         }
