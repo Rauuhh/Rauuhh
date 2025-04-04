@@ -9,23 +9,21 @@ MERCADAM es una aplicación que permite a los clientes realizar compras en líne
 El proyecto consta de las siguientes clases:
 
 - **AppZonaClientes.java**: Controla el flujo principal del programa.
-- **Cliente.java**: Representa a un cliente con sus datos y pedido.
-- **Mercadam.java**: Administra la lista de clientes.
+- **Cliente.java**: Representa a un cliente con sus datos.
+- **Mercadam.java**: Administra los clientes.
 - **Pedido.java**: Maneja los pedidos y aplica promociones.
-- **Producto.java** 
-*(posiblemente un enum no proporcionado en los archivos compartidos).*
+- **Producto.java** : ENUM
 
-  
 ## Descripción 
 
 ### AppZonaClientes
 
-Esta clase contiene el main y gestiona la interacción con el usuario:
+Esta clase contiene el main y gestiona la interacción con nosotros:
 
-- **main()**: Inicia el ciclo de autenticación y compra.
-- **autenticacion(Set<Cliente> clientes)**: Verifica credenciales del usuario.
-- **iniciarCompra()**: Permite a un cliente seleccionar productos.
-- **imprimirProductos()**: Muestra los productos disponibles.
+- **main()**: Inicia programa.
+- **autenticacion(Set<Cliente> clientes)**: Verifica que el usuario exista.
+- **iniciarCompra()**: Permite a un cliente elegir productos.
+- **imprimirProductos()**: Muestra los productos que hay.
 - **menu()**: Proporciona opciones para aplicar promociones, ver pedidos o eliminarlos.
 - **imprimirDespedida()**: Muestra un mensaje de despedida.
 
@@ -207,8 +205,8 @@ Clase que representa a un cliente.
 
 - **Atributos:**
     - usuario: Nombre del cliente.
-    - contrasena: Contraseña generada aleatoriamente.
-    - direccion: Dirección del cliente.
+    - contrasena: Contraseña aleatoria.
+    - direccion: Dirección del cliente FIJA.
     - pedido: Instancia de Pedido.
     - promociones: Indica si se aplicaron promociones.
 
@@ -216,8 +214,8 @@ Clase que representa a un cliente.
     - setUsuario(): Solicita el nombre de usuario.
     - setContrasenya(): Genera una contraseña aleatoria.
     - crearPedido(): Crea un nuevo pedido.
-    - insertarProducto(Producto producto): Agrega productos al pedido.
-    - importePedido(): Retorna el importe total del pedido.
+    - insertarProducto(Producto producto): Agrega productos.
+    - importePedido(): Devuelve el importe total del pedido.
 >package org.example.MERCADAM;
 
 import java.util.Objects;
@@ -361,7 +359,7 @@ Clase encargada de gestionar pedidos y aplicar promociones.
 
 - **Atributos:**
     - pedido: HashMap<Producto, Integer> con productos y cantidades.
-    - importe_tota: Total acumulado del pedido.
+    - importe_tota: Total del pedido.
 - **Métodos:**
     - insertarProductos(Producto producto): Agrega productos al pedido.
     - quitarProductos(Producto producto): Permite quitar productos
@@ -478,3 +476,4 @@ public class Pedido {
         return importe_total;
     }
 }
+
