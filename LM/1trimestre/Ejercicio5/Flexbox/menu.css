@@ -1,0 +1,44 @@
+body
+{
+    text-align: center;
+}
+
+nav
+{
+    display: flex;
+    background-color: cadetblue;
+}
+
+a
+{
+    width: 20%;
+    font: 14px verdana bold;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media (max-width: 768px)
+{
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: justify;
+    }
+    a
+    {
+        
+        list-style: none;
+        text-decoration: none;
+        align-self: center;
+    }
+}
+
+.especial
+{
+    align-self: flex-end;
+}

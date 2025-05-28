@@ -1,0 +1,22 @@
+*{padding: 0px; margin: 0px;}
+
+.contenedor
+{
+    display: flex;
+}
+
+.tri
+{
+    width: 31%;
+    padding: 0px 10px;
+    text-align: center;
+    align-content: center;
+    height: 900px;
+
+}
+
+.tri>a{
+    text-decoration: none;
+    font-size: 50px;
+    color: coral;
+}

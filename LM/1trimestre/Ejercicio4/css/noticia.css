@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+h1{
+    text-align: center;
+    font: verdana;
+    color: grey;
+    background-color: aquamarine;
+}
+
+.todo
+{
+    display: flex;
+}
+.contenedor{
+    width: 50%;
+}
+
+footer
+{
+    text-align: center;
+    background-color: red;
+}

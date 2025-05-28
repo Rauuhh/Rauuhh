@@ -1,0 +1,51 @@
+body
+{
+    margin: auto;
+    
+}
+
+#pagina
+{
+    width: 100%;
+    margin: auto;
+}
+
+
+.contenedor
+{
+    margin: auto;
+}
+
+.imagen
+{
+    padding: 5px;
+    height: 250px;
+    width: 31%;
+}
+
+.imagen2
+
+{
+    padding: 5px;
+    width: 64%;
+    height: 250px;
+}
+@media (max-width: 768px)
+{
+    .imagen
+    {
+        padding: 5px;
+        width: 100%;
+    }
+    .imagen2
+
+    {
+        padding: 5px;
+        width: 100%;
+    }
+    .contenedor
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
