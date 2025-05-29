@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 46</title>
+</head>
+    <body>
+    <button id="cambiarFondo">Cambiar fondo</button>
+    <p id="texto" style="display:none">Texto oculto</p>
+    <button id="toggle">Mostrar/Ocultar</button>
+
+        <script>
+            document.getElementById("cambiarFondo").addEventListener("click", () => {
+            document.body.style.backgroundColor = "lightblue";
+            });
+            document.getElementById("toggle").addEventListener("click", () => {
+            let texto = document.getElementById("texto");
+            texto.style.display = texto.style.display ="none" ? "block" : "none";
+            });
+        </script>
+    </body>
+</html>

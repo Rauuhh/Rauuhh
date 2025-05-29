@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio28</title>
+</head>
+    <body>
+        <script>
+            console.log( "Actividad 1" );
+            let number = Number(prompt("Escribe un numero:"));
+            if (number % 2 == 0) {
+            console.log("Es par");
+            } else {
+                console.log("Es impar");
+                }
+
+                console.log("Actividad 2");
+                let nota = Number(prompt("Escribe una nota:"));
+                if (nota >= 9) {
+                console.log("Sobresaliente");
+                } else if(nota >= 7) {
+                console.log("Notable");
+                } else if(nota >=5) {
+                console.log("Aprobado");
+                } else {
+                console.log("Suspendido");
+                }
+
+                console.log("Actividad 3");
+                let nombre;
+                while (nombre != "fin") {
+                nombre = String(prompt("Escribe un nombre. Escribe (fin) para terminar"));
+                }
+                
+                console.log("Actividad 4");
+                for (let i = 1; i <= 10; i++) {
+                console.log("5 x ${i} = ${5 * i}");
+                }
+        </script>
+    </body>
+</html>
