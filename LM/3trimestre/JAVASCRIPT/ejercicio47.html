@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio47</title>
+</head>
+<body>
+<form id="formulario">
+<input id="nombre" placeholder="Nombre">
+<button type="submit">Enviar</button>
+</form>
+<p id="resultado"></p>
+<script>
+document.getElementById("formulario").addEventListener("submit", e => {
+e.preventDefault();
+let nombre = document.getElementById("nombre").value;
+document.getElementById("resultado").textContent = `Hola ${nombre}` ;
+});
+</script>
+
+</body>
+</html>

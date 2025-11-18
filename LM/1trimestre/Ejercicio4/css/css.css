@@ -1,0 +1,26 @@
+h1{
+    color: blueviolet;
+    font: arial 40px;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+h2
+{
+    color: orange;
+    font: verdana 25px;
+}
+
+p
+{
+    color: green;
+    font: 11px bold courier;
+    padding: 2px;
+    border: black solid 10px;
+}
+
+body
+{
+    background-color: aquamarine;
+    text-align: center;
+}
