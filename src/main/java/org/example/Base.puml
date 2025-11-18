@@ -1,0 +1,51 @@
+@startuml
+title Diagrama de Aplicación 
+
+skinparam componentStyle rectangle
+
+actor Usuario as "Usuario"
+
+' --- Frontend Web ---
+package "Frontend Web (HTML + JS + Bootstrap)" {
+    [index.html]
+    [catalog.html]
+    [contacto.html]
+    [loginModal]
+    [tools.json]
+}
+
+' --- Backend Java ---
+package "Lógica Aplicación (JavaFX + Controladores + Modelos)" {
+    [HelloController]
+    [UsuariosController]
+    [ProductosController]
+    [OrdenesController]
+    [Usuario.java]
+    [Producto.java]
+    [Orden.java]
+    [Conexion.java]
+}
+
+' --- Base de Datos ---
+database "MariaDB" as DB
+
+' --- Flujo de Usuario ---
+Usuario --> [index.html] : Accede
+Usuario --> [loginModal] : Login/Registro
+Usuario --> [catalog.html] : Consulta herramientas
+[catalog.html] --> [tools.json] : fetch herramientas
+
+' --- Comunicación lógica ---
+[HelloController] --> [UsuariosController]
+[UsuariosController] --> [Usuario.java]
+[UsuariosController] --> [ProductosController] : si vendedor
+[UsuariosController] --> [OrdenesController] : si cliente
+
+[ProductosController] --> [Producto.java]
+[OrdenesController] --> [Orden.java]
+
+[ProductosController] --> [Conexion.java]
+[OrdenesController] --> [Conexion.java]
+[Conexion.java] --> DB
+
+@enduml
