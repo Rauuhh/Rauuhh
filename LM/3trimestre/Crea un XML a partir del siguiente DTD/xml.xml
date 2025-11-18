@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<árbol>
+    <especie>
+        <nombre>Álamo</nombre>
+        <variedad>Populus nigra</variedad>
+        <origen>España</origen>
+        <origen>Francia</origen>
+        <color_fruto>Sin fruto</color_fruto>
+        <maduración>Octubre</maduración>
+        <riego>Moderado</riego>
+        <precio>25</precio>
+    </especie>
+    <especie>
+        <nombre>Peral</nombre>
+        <variedad>Williams</variedad>
+        <origen>Italia</origen>
+        <origen>Francia</origen>
+        <color_fruto>Verde</color_fruto>
+        <maduración>Agosto</maduración>
+        <riego>Moderado</riego>
+    </especie>
+</árbol>

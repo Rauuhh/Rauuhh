@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    background-color: antiquewhite;
+    color: grayS;
+    padding: 0px 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.foto-perfil {
+
+    width: 250px;
+
+}
+
+header, section {
+    margin-top: 20px;
+    padding: 10px;
+}

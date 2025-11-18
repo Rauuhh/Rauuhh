@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio45</title>
+</head>
+    <body>
+    <p id="titulo">Titulo de ejemplo</p>
+    <p id="boton">Clicame</p>
+        <script>
+            let titulo = document.getElementById("titulo");
+            titulo.textContent = "Nuevo titulo";
+            titulo.style.color = "blue";
+
+            document.getElementById("boton").addEventListener("click", () => {
+            alert("¡clic realizado!");
+                });
+        </script>
+    </body>
+</html>

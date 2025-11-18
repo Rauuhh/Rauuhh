@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio48</title>
+</head>
+    <body>
+        <h1 id="h1">Hola</h1>
+            <p id="p1">Esto es JavaScript</p>
+                <img id="img" src="Foto.jpg">
+                <p id="p2">Este es el ultimo ejercicio</p>
+                    <button id="style">Cambiar estilo</button>
+                    <button id="hide">Esconder parrafo</button>
+                    <button id="lenguage">Cambiar a ingles</button>
+
+        <script>
+        document.getElementById("style").addEventListener("click", () => {
+        let p1 = document.getElementById("p1");
+        p1.style.fontsize = "36px";
+        p1.style.textAlign = "center";
+        });
+        document.getElementById("hide").addEventListener("click", () => {
+        let texto = document.getElementById("p2");
+        p2.style.display = p2.style.display === "none" ? "block" : "none";
+
+        });
+
+        document.getElementById("lenguage").addEventListener("click", () => {
+        let h1 = document.getElementById("h1");
+        let p1 = document.getElementById("p1");
+        let p2 = document.getElementById("p2");
+        });
+        h1.textContent = "Welcome to JavaScript";
+        p1.textContent = "These are exercises about JavaScript";
+        p2.textContent = "End of the exercises"
+
+        </script>
+    </body>
+</html>
