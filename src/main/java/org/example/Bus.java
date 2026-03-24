@@ -15,7 +15,6 @@ public class Bus {
         int e = 0;
 
         System.out.println("\n<<<<<<<<<< CARRERA DE BUSES WOWOWOWOWOWOWOWOWOWOWOOWOWWOWOWO >>>>>>>>>>");
-        System.out.println("\n<<<<<<<<<<                   ITALIAN BRAINROT                >>>>>>>>>>");
         System.out.println("\n<<<<<<<<<<                        FIGHT!                     >>>>>>>>>>");
         Thread.sleep(3000);
 
@@ -50,15 +49,15 @@ public class Bus {
 
         if (a >= TAM)
         {
-            System.out.println("\033[32m"+ "EL AUTOBUSITO BOMBARDIRO CROCODILO HA LLEGADO A SU DESTINO!!" + "\033[0m");
+            System.out.println("\033[32m"+ "EL AUTOBUSITO THERIANS HA LLEGADO A SU DESTINO!!" + "\033[0m");
         } else if (b >= TAM) {
-            System.out.println("\033[32m"+ "EL AUTOBUSITO  LIRILI LARILA HA LLEGADO A SU DESTINO!!" + "\033[0m");
+            System.out.println("\033[32m"+ "EL AUTOBUSITO  OTAKAS HA LLEGADO A SU DESTINO!!" + "\033[0m");
         }else if (c >= TAM) {
-            System.out.println("\033[32m"+ "EL AUTOBUSITO  TUNG TUNG SAHUR HA LLEGADO A SU DESTINO!!" + "\033[0m");
+            System.out.println("\033[32m"+ "EL AUTOBUSITO  GYM BROS HA LLEGADO A SU DESTINO!!" + "\033[0m");
         }else if (d >= TAM) {
-            System.out.println("\033[32m"+ "EL AUTOBUSITO  TRALARELO TRALALA HA LLEGADO A SU DESTINO!!" + "\033[0m");
+            System.out.println("\033[32m"+ "EL AUTOBUSITO  Calvos y gordos HA LLEGADO A SU DESTINO!!" + "\033[0m");
         }else{
-            System.out.println("\033[32m"+ "EL AUTOBUSITO  BRR BRR PATAPIN HA LLEGADO A SU DESTINO!!" + "\033[0m");
+            System.out.println("\033[32m"+ "EL AUTOBUSITO  Jacobo/Joaquin HA LLEGADO A SU DESTINO!!" + "\033[0m");
         }
     }
 
@@ -70,27 +69,27 @@ public class Bus {
         sb.append("-".repeat(117)).append("\n");
         sb.append(" ".repeat(n1)).append("__________________     ").append(" ".repeat(100 - n1)).append("|\n");
         sb.append(" ".repeat(n1)).append("|__|__|__|__|__|__|___ ").append(" ".repeat(TAM - n1)).append("|\n");
-        sb.append(" ".repeat(n1)).append("|BOMBARDIRO CROCODILO|)").append(" ".repeat(TAM - n1)).append("|\n");
+        sb.append(" ".repeat(n1)).append("|       THERIANS     |)").append(" ".repeat(TAM - n1)).append("|\n");
         sb.append(" ".repeat(n1)).append("|~~~~@~~~~~~~~~~@~~~~|)").append(" ".repeat(TAM - n1)).append("|\n");
 
         sb.append(" ".repeat(n2)).append("__________________     ").append(" ".repeat(100 - n2)).append("|\n");
         sb.append(" ".repeat(n2)).append("|__|__|__|__|__|__|___ ").append(" ".repeat(TAM - n2)).append("|\n");
-        sb.append(" ".repeat(n2)).append("|     LIRILI LARILA  |)").append(" ".repeat(TAM - n2)).append("|\n");
+        sb.append(" ".repeat(n2)).append("|       OTAKAS       |)").append(" ".repeat(TAM - n2)).append("|\n");
         sb.append(" ".repeat(n2)).append("|~~~~@~~~~~~~~~~@~~~~|)").append(" ".repeat(TAM - n2)).append("|\n");
 
         sb.append(" ".repeat(n3)).append("__________________     ").append(" ".repeat(100 - n3)).append("|\n");
         sb.append(" ".repeat(n3)).append("|__|__|__|__|__|__|___ ").append(" ".repeat(TAM - n3)).append("|\n");
-        sb.append(" ".repeat(n3)).append("|   TUNG TUNG SAHUR  |)").append(" ".repeat(TAM - n3)).append("|\n");
+        sb.append(" ".repeat(n3)).append("|       GYM BROS     |)").append(" ".repeat(TAM - n3)).append("|\n");
         sb.append(" ".repeat(n3)).append("|~~~~@~~~~~~~~~~@~~~~|)").append(" ".repeat(TAM - n3)).append("|\n");
 
         sb.append(" ".repeat(n4)).append("__________________     ").append(" ".repeat(100 - n4)).append("|\n");
         sb.append(" ".repeat(n4)).append("|__|__|__|__|__|__|___ ").append(" ".repeat(TAM - n4)).append("|\n");
-        sb.append(" ".repeat(n4)).append("| TRALARELO TRALALA  |)").append(" ".repeat(TAM - n4)).append("|\n");
+        sb.append(" ".repeat(n4)).append("|   Calvos y Gordos  |)").append(" ".repeat(TAM - n4)).append("|\n");
         sb.append(" ".repeat(n4)).append("|~~~~@~~~~~~~~~~@~~~~|)").append(" ".repeat(TAM - n4)).append("|\n");
 
         sb.append(" ".repeat(n5)).append("__________________     ").append(" ".repeat(100 - n5)).append("|\n");
         sb.append(" ".repeat(n5)).append("|__|__|__|__|__|__|___ ").append(" ".repeat(TAM - n5)).append("|\n");
-        sb.append(" ".repeat(n5)).append("|  BRR BRR PATAPIN   |)").append(" ".repeat(TAM - n5)).append("|\n");
+        sb.append(" ".repeat(n5)).append("|   Jacobo/Joaquin   |)").append(" ".repeat(TAM - n5)).append("|\n");
         sb.append(" ".repeat(n5)).append("|~~~~@~~~~~~~~~~@~~~~|)").append(" ".repeat(TAM - n5)).append("|\n");
         sb.append("-".repeat(117)).append("\n");
 

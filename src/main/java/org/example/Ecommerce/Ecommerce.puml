@@ -1,0 +1,57 @@
+@startuml
+package org.example.Ecommerce {
+
+    class AppEccomerce {
+        +main(args : String[]) : void
+    }
+
+    abstract class MetodoPago {
+        {abstract} +procesarPago(importe : double) : void
+    }
+
+    class TarjetaCredito {
+        -nro_tarjeta : String
+        -tipo : String
+        +TarjetaCredito(nro_tarjeta : String, tipo : String)
+        -validarTarjeta(nro_tarjeta : String, tipo : String) : void
+        +procesarPago(importe : double) : void
+        +toString() : String
+    }
+
+    class PayPal {
+        -saldoPre : double
+        -cuenta : String
+        -saldo : double
+        +PayPal(cuenta : String, saldo : double)
+        +PayPal(cuenta : String)
+        -validarPayPal(cuenta : String, importe : double) : boolean
+        +procesarPago(importe : double) : void
+        +toString() : String
+    }
+
+    class Bizum {
+        -telefono : String
+        -pin : int
+        +Bizum(telefono : String)
+        +generarPin() : int
+        +validarBizum(pin : int) : void
+        +procesarPago(importe : double) : void
+        +toString() : String
+    }
+
+    class Tienda {
+        +realizarPago(metodo : MetodoPago, importe : double) : void
+        +iniciarPago() : void
+        -procesoTarjeta() : void
+        -procesoBizum() : void
+        -procesoPayPal() : void
+    }
+
+    MetodoPago <|-- TarjetaCredito
+    MetodoPago <|-- PayPal
+    MetodoPago <|-- Bizum
+
+    AppEccomerce --> Tienda
+    Tienda --> MetodoPago
+}
+@enduml
