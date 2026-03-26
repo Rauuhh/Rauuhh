@@ -8,6 +8,11 @@ public class Cliente {
     private Pedido pedido;
     private boolean promociones;
 
+    /**
+     * Constructor que crea a un cliente
+     * @param usuario nombre de usuario
+     * @param contrasena contraseña
+     */
     public Cliente(String usuario, String contrasena) {
         this.usuario = usuario;
         this.contrasena = contrasena; this.pedido = null;
@@ -15,12 +20,19 @@ public class Cliente {
         this.direccion = "Calle Falsa, 123";
     }
 
+    /**
+     * Crea un nuevo pedido
+     */
     public void crearPedido(){
         this.pedido = new Pedido();
     }
 
+    /**
+     * Añadeproductos al mapa y actualiza el totak
+     * @param producto El producto de ka lista que hay q insertar
+     */
     public void insertarProducto(Producto producto){
-        int nuevaCantidad = pedido.getPedido().getOrDefault(producto,1) + 1;
+        int nuevaCantidad = pedido.getPedido().getOrDefault(producto,0) + 1;
         pedido.getPedido().put(producto, nuevaCantidad);
         pedido.actualizarImporteTotal(producto.getPrecio());
     }

@@ -6,11 +6,17 @@ public class Mercadam {
 
     private Set<Cliente> clientes;
 
+    /**
+     * Genera conjuntos de clientes
+     */
     public Mercadam() {
         this.clientes = new HashSet<>();
         generarClientes();
     }
 
+    /**
+     * Genera su usario y conttraseña aleatorio de 8 caracteres
+     */
     public void generarClientes() {
 
         String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

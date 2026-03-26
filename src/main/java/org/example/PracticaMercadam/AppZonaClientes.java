@@ -2,6 +2,9 @@ package org.example.PracticaMercadam;
 
 import java.util.*;
 
+/**
+ * Clase principal del programa, hace el login, elegir productos y su gestion
+ */
 public class AppZonaClientes {
     static Scanner entrada = new Scanner(System.in);
     static Cliente cliente;
@@ -15,7 +18,10 @@ public class AppZonaClientes {
         imprimirResumen();
     }
 
-
+    /**
+     * Gestiona el sistema de inicio de sesion
+     * @param clientes Conjunto de clientes validos
+     */
     public static void autentificacion(Set<Cliente> clientes) {
         System.out.println(" === COMPRA ONLINE EN MERCADAM");
         boolean estado = false;
@@ -45,6 +51,11 @@ public class AppZonaClientes {
             }
         }
     }
+
+    /**
+     * Bucle que el usuario pone productos hasta que diga que no mas
+     * Lanza la excepcion si no existe un producto
+     */
     public static void iniciarCompra(){
         cliente.crearPedido();
         System.out.println();
@@ -94,6 +105,9 @@ public class AppZonaClientes {
 
     }
 
+    /**
+     * Muestra los productos disponibles
+     */
     public static void imprimirProductos() {
         System.out.println("Elige un producto de la lista...");
         for (Producto p : Producto.values()) {
@@ -101,6 +115,9 @@ public class AppZonaClientes {
         }
     }
 
+    /**
+     * Muestra tus productos elegidos
+     */
     public static void imprimirResumen(){
         System.out.println(" === RESUMEN DE TU CARRITO ===");
         System.out.println("Productos");
@@ -158,6 +175,9 @@ public class AppZonaClientes {
         }
     }
 
+    /**
+     * Despedida del programa
+     */
     public static void imprimirDespedida(){
         System.out.println("=== GRACIAS POR SU PEDIDO ===");
         System.out.println("Lo recibira en unos dias en la direccion " + cliente.getDireccion());

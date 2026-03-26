@@ -3,21 +3,31 @@ package org.example.PracticaMercadam;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.example.PracticaMercadam.AppZonaClientes.entrada;
 
 public class Pedido {
 
     private HashMap<Producto,Integer> pedido;
     private double importeTotal;
 
+    /**
+     * Pedido de un cliente
+     */
     public Pedido() {
         pedido = new HashMap<>();
         importeTotal = 0;
     }
 
+    /**
+     * Suma cantidad a el importe total
+     * @param importe, Es el valor a sumar
+     */
     public void actualizarImporteTotal(double importe){
         this.importeTotal += importe;
     }
+
+    /**
+     * Aplica promocion 3x2 por cada 3 productos de cada tipo que haaya
+     */
     public void aplicarPromo3x2(){
         double descuento = 0;
         for (Map.Entry<Producto, Integer> des : pedido.entrySet()) {
@@ -29,6 +39,10 @@ public class Pedido {
         this.importeTotal -= descuento;
     }
 
+
+    /**
+     * Descuenta el 10% del total
+     */
     public void aplicarpromo10(){
         this.importeTotal *= 0.90;
     }
